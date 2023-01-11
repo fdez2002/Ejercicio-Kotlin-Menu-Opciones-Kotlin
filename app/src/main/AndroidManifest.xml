@@ -13,6 +13,42 @@
         android:theme="@style/Theme.EjercicioKotlinMenúOpcionesKotlin"
         tools:targetApi="31">
         <activity
+            android:name=".ScrollingActivityDam"
+            android:exported="false"
+            android:label="@string/title_activity_scrolling_dam"
+            android:theme="@style/Theme.EjercicioKotlinMenúOpcionesKotlin.NoActionBar">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".ScrollingActivityDaw"
+            android:exported="false"
+            android:label="@string/title_activity_scrolling_daw"
+            android:theme="@style/Theme.EjercicioKotlinMenúOpcionesKotlin.NoActionBar">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".ScrollingActivityAsir"
+            android:exported="false"
+            android:label="@string/title_activity_scrolling_asir"
+            android:theme="@style/Theme.EjercicioKotlinMenúOpcionesKotlin.NoActionBar">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".ScrollingActivity"
+            android:exported="false"
+            android:label="@string/title_activity_scrolling"
+            android:theme="@style/Theme.EjercicioKotlinMenúOpcionesKotlin.NoActionBar">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
             android:name=".MainActivity"
             android:exported="true"
             android:label="@string/app_name"

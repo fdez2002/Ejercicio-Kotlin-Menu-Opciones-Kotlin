@@ -1,5 +1,6 @@
 package com.example.ejercicio_kotlin_men_opciones_kotlin
 
+import android.content.Intent
 import android.os.Bundle
 import com.google.android.material.snackbar.Snackbar
 import androidx.appcompat.app.AppCompatActivity
@@ -41,7 +42,7 @@ class MainActivity : AppCompatActivity() {
         menuInflater.inflate(R.menu.menu_main, menu)
         return true
     }
-/*
+
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
         // Handle action bar item clicks here. The action bar will
         // automatically handle clicks on the Home/Up button, so long
@@ -49,7 +50,26 @@ class MainActivity : AppCompatActivity() {
 
         return when (item.itemId) {
 
-            R.id.action_settings -> true
+            R.id.menuAsir ->{
+                startActivity(Intent(this, ScrollingActivityAsir::class.java).apply {  })
+
+                true
+
+            }
+            R.id.menuDaw ->{
+                startActivity(Intent(this, ScrollingActivityDaw::class.java).apply {  })
+
+                true
+
+            }
+            R.id.menuDam ->{
+                startActivity(Intent(this, ScrollingActivityDam::class.java).apply {  })
+
+                true
+
+            }
+
+
             else -> super.onOptionsItemSelected(item)
         }
 
@@ -58,7 +78,7 @@ class MainActivity : AppCompatActivity() {
 
     }
 
-         */
+
 
     override fun onSupportNavigateUp(): Boolean {
         val navController = findNavController(R.id.nav_host_fragment_content_main)
