@@ -41,12 +41,20 @@
                 android:textAlignment="center"
                 android:textSize="48sp" />
 
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="20dp" />
+
             <ImageView
                 android:id="@+id/imageView7"
                 android:layout_width="match_parent"
                 android:layout_height="200dp"
                 app:srcCompat="@drawable/computer"
                 tools:srcCompat="@drawable/computer" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="20dp" />
 
             <ImageView
                 android:id="@+id/imageView8"
@@ -55,6 +63,10 @@
                 android:paddingTop="15dp"
                 app:srcCompat="@drawable/web"
                 tools:srcCompat="@tools:sample/avatars" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="20dp" />
 
             <ImageView
                 android:id="@+id/imageView9"
