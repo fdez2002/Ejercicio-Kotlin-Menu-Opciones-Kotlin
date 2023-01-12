@@ -19,7 +19,7 @@ class ScrollingActivityDaw : AppCompatActivity() {
         setContentView(binding.root)
 
         setSupportActionBar(findViewById(R.id.toolbar))
-        binding.toolbarLayout.title = title
+        binding.toolbarLayout.title = "CFGS DAW"
         binding.fab.setOnClickListener { view ->
             startActivity(Intent(this, MainActivity::class.java).apply {  })
         }
