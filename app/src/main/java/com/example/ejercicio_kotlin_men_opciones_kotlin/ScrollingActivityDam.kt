@@ -18,7 +18,7 @@ class ScrollingActivityDam : AppCompatActivity() {
         binding = ActivityScrollingDamBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        setSupportActionBar(findViewById(R.id.toolbar))
+        setSupportActionBar(binding.toolbar)
         binding.toolbarLayout.title = "CFGS DAM"
         binding.fab.setOnClickListener { view ->
             startActivity(Intent(this, MainActivity::class.java).apply {  })

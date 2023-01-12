@@ -33,21 +33,12 @@
         <activity
             android:name=".ScrollingActivityAsir"
             android:exported="false"
-            android:label="@string/title_activity_scrolling_asir"
             android:theme="@style/Theme.EjercicioKotlinMenúOpcionesKotlin.NoActionBar">
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
-        <activity
-            android:name=".ScrollingActivity"
-            android:exported="false"
-            android:label="@string/title_activity_scrolling"
-            android:theme="@style/Theme.EjercicioKotlinMenúOpcionesKotlin.NoActionBar">
-            <meta-data
-                android:name="android.app.lib_name"
-                android:value="" />
-        </activity>
+
         <activity
             android:name=".MainActivity"
             android:exported="true"
