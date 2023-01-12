@@ -37,6 +37,12 @@ class MainActivity : AppCompatActivity() {
          */
     }
 
+    //Menu toolbar
+    /*
+        Para especificar el menú de opciones para una actividad, invalide onCreateOptionsMenu()
+        (los fragmentos proporcionan su propia onCreateOptionsMenu() devolución de llamada).
+        En este método, puede inflar su recurso de menú ( definido en XML ) en el Menuproporcionado en la devolución de llamada.
+     */
     override fun onCreateOptionsMenu(menu: Menu): Boolean {
         // Inflate the menu; this adds items to the action bar if it is present.
         menuInflater.inflate(R.menu.menu_main, menu)
@@ -44,28 +50,41 @@ class MainActivity : AppCompatActivity() {
     }
 
 
-
+        /*
+        Cuando se selecciona un elemento verificable, el sistema llama al método de devolución de llamada correspondiente
+        al elemento seleccionado (como onOptionsItemSelected()). Es aquí donde debe establecer el estado de la casilla de
+        verificación, porque una casilla de verificación o un botón de radio no cambia su estado automáticamente.
+         */
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
-        // Handle action bar item clicks here. The action bar will
-        // automatically handle clicks on the Home/Up button, so long
-        // as you specify a parent activity in AndroidManifest.xml.
-
+        //devulve el item pulsado
         return when (item.itemId) {
 
-            R.id.menuAsir ->{
-                startActivity(Intent(this, ScrollingActivityAsir::class.java).apply {  })
+            R.id.menuAsir -> {
+                startActivity(
+                    Intent(
+                        this,
+                        ScrollingActivityAsir::class.java
+                    ).apply { })//se ejecuta ScrollingActivityAsir
 
                 true
 
             }
-            R.id.menuDaw ->{
-                startActivity(Intent(this, ScrollingActivityDaw::class.java).apply {  })
+            R.id.menuDaw -> {
+                startActivity(
+                    Intent(
+                        this,
+                        ScrollingActivityDaw::class.java
+                    ).apply { })//se ejecuta ScrollingActivityDaw
 
                 true
 
             }
-            R.id.menuDam ->{
-                startActivity(Intent(this, ScrollingActivityDam::class.java).apply {  })
+            R.id.menuDam -> {
+                startActivity(
+                    Intent(
+                        this,
+                        ScrollingActivityDam::class.java
+                    ).apply { })//se ejecuta ScrollingActivityDam
 
                 true
 
@@ -76,10 +95,7 @@ class MainActivity : AppCompatActivity() {
         }
 
 
-
-
     }
-
 
 
     override fun onSupportNavigateUp(): Boolean {

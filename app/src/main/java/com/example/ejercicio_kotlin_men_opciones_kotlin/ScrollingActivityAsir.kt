@@ -19,7 +19,8 @@ class ScrollingActivityAsir : AppCompatActivity() {
         setContentView(binding.root)
 
         setSupportActionBar(binding.toolbar)
-        binding.toolbarLayout.title = "CFGS ASIR"
+        binding.toolbarLayout.title = "CFGS ASIR"//tutulo de la actividad
+        //si pulsamos el fab nos llevará a la actividad princiapal
         binding.fab.setOnClickListener { view ->
             startActivity(Intent(this, MainActivity::class.java).apply {  })
         }
