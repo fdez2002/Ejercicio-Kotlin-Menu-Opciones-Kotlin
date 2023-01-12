@@ -56,16 +56,19 @@ class FirstFragment : Fragment() {
         return when (item.itemId) {
 
             R.id.menuAsir ->{
+                startActivity(Intent(activity, ScrollingActivityAsir::class.java).apply {  })
 
                 true
 
             }
             R.id.menuDaw ->{
+                startActivity(Intent(activity, ScrollingActivityDaw::class.java).apply {  })
 
                 true
 
             }
             R.id.menuDam ->{
+                startActivity(Intent(activity, ScrollingActivityDam::class.java).apply {  })
 
                 true
 
