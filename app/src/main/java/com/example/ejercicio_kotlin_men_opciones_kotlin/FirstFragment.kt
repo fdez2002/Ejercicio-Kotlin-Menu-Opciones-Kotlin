@@ -66,26 +66,38 @@ class FirstFragment : Fragment() {
         A continuación, igual que hacíamos con onCreateOptionsMenu() para los menús básicos,
         vamos a sobreescribir en nuestra actividad el evento encargado de construir los menús
         contextuales asociados a los diferentes controles de la aplicación. En este caso el evento
-        se llama onCreateContextMenu(), y a diferencia de onCreateOptionsMenu() éste se llama cada vez
+        se llama onContextItemSelected(), y a diferencia de onCreateOptionsMenu() éste se llama cada vez
          que se necesita mostrar un menú contextual, y no una sola vez al inicio de la aplicación.
          */
     override fun onContextItemSelected(item: MenuItem): Boolean {
         return when (item.itemId) {
 
             R.id.menuAsir -> {
-                startActivity(Intent(activity, ScrollingActivityAsir::class.java).apply { })//ejecuta ScrollingActivityAsir
+                startActivity(
+                    Intent(
+                        activity,
+                        ScrollingActivityAsir::class.java
+                    ).apply { })//ejecuta ScrollingActivityAsir
 
                 true
 
             }
             R.id.menuDaw -> {
-                startActivity(Intent(activity, ScrollingActivityDaw::class.java).apply { })//ejecuta ScrollingActivityDaw
+                startActivity(
+                    Intent(
+                        activity,
+                        ScrollingActivityDaw::class.java
+                    ).apply { })//ejecuta ScrollingActivityDaw
 
                 true
 
             }
             R.id.menuDam -> {
-                startActivity(Intent(activity, ScrollingActivityDam::class.java).apply { })//ejecuta ScrollingActivityDam
+                startActivity(
+                    Intent(
+                        activity,
+                        ScrollingActivityDam::class.java
+                    ).apply { })//ejecuta ScrollingActivityDam
 
                 true
 

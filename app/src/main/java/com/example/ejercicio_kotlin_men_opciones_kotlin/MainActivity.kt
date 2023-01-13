@@ -41,7 +41,7 @@ class MainActivity : AppCompatActivity() {
     /*
         Para especificar el menú de opciones para una actividad, invalide onCreateOptionsMenu()
         (los fragmentos proporcionan su propia onCreateOptionsMenu() devolución de llamada).
-        En este método, puede inflar su recurso de menú ( definido en XML ) en el Menuproporcionado en la devolución de llamada.
+        En este método, puede inflar su recurso de menú ( definido en XML ) en el Menu proporcionado en la devolución de llamada.
      */
     override fun onCreateOptionsMenu(menu: Menu): Boolean {
         // Inflate the menu; this adds items to the action bar if it is present.
@@ -50,11 +50,11 @@ class MainActivity : AppCompatActivity() {
     }
 
 
-        /*
-        Cuando se selecciona un elemento verificable, el sistema llama al método de devolución de llamada correspondiente
-        al elemento seleccionado (como onOptionsItemSelected()). Es aquí donde debe establecer el estado de la casilla de
-        verificación, porque una casilla de verificación o un botón de radio no cambia su estado automáticamente.
-         */
+    /*
+    Cuando se selecciona un elemento verificable, el sistema llama al método de devolución de llamada correspondiente
+    al elemento seleccionado (como onOptionsItemSelected()). Es aquí donde debe establecer el estado de la casilla de
+    verificación, porque una casilla de verificación o un botón de radio no cambia su estado automáticamente.
+     */
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
         //devulve el item pulsado
         return when (item.itemId) {
